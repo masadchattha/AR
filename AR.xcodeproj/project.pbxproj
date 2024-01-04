@@ -55,14 +55,78 @@
 		DC2260B52A8FFAB600AC9830 /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				DC2260B62A8FFAB600AC9830 /* AppDelegate.swift */,
-				DC2260BA2A8FFAB600AC9830 /* ViewController.swift */,
-				DC2260BC2A8FFAB600AC9830 /* Main.storyboard */,
-				DC2260B82A8FFAB600AC9830 /* art.scnassets */,
-				DC2260BF2A8FFAB700AC9830 /* Assets.xcassets */,
-				DC2260C12A8FFAB700AC9830 /* LaunchScreen.storyboard */,
+				DCA3CAE52B4719FD001921AD /* App */,
+				DCA3CAE82B471A16001921AD /* Models */,
+				DCA3CAE62B471A03001921AD /* Views */,
+				DCA3CAE72B471A0A001921AD /* Controllers */,
+				DCA3CAE92B471A22001921AD /* Assest */,
+				DCA3CAEA2B471A2A001921AD /* Arts */,
+				DCA3CAEB2B471A70001921AD /* Extension */,
+				DCA3CAEC2B471A78001921AD /* Utils */,
 			);
 			path = AR;
+			sourceTree = "<group>";
+		};
+		DCA3CAE52B4719FD001921AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DC2260B62A8FFAB600AC9830 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DCA3CAE62B471A03001921AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC2260C12A8FFAB700AC9830 /* LaunchScreen.storyboard */,
+				DC2260BC2A8FFAB600AC9830 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCA3CAE72B471A0A001921AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC2260BA2A8FFAB600AC9830 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DCA3CAE82B471A16001921AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCA3CAE92B471A22001921AD /* Assest */ = {
+			isa = PBXGroup;
+			children = (
+				DC2260BF2A8FFAB700AC9830 /* Assets.xcassets */,
+			);
+			path = Assest;
+			sourceTree = "<group>";
+		};
+		DCA3CAEA2B471A2A001921AD /* Arts */ = {
+			isa = PBXGroup;
+			children = (
+				DC2260B82A8FFAB600AC9830 /* art.scnassets */,
+			);
+			path = Arts;
+			sourceTree = "<group>";
+		};
+		DCA3CAEB2B471A70001921AD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DCA3CAEC2B471A78001921AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
