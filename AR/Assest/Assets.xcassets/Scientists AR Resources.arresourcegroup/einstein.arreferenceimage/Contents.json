@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "newton.jpg",
+      "filename" : "einstein.jpg",
       "idiom" : "universal"
     }
   ],
@@ -10,6 +10,7 @@
     "version" : 1
   },
   "properties" : {
-    "width" : 0
+    "unit" : "centimeters",
+    "width" : 5.9459399999999993
   }
 }
