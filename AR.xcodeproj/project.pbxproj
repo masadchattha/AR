@@ -13,6 +13,9 @@
 		DC2260BE2A8FFAB600AC9830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2260BC2A8FFAB600AC9830 /* Main.storyboard */; };
 		DC2260C02A8FFAB700AC9830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2260BF2A8FFAB700AC9830 /* Assets.xcassets */; };
 		DC2260C32A8FFAB700AC9830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2260C12A8FFAB700AC9830 /* LaunchScreen.storyboard */; };
+		DC28F7912B4AD1CC00BF875D /* scientists.json in Resources */ = {isa = PBXBuildFile; fileRef = DC28F7902B4AD1CC00BF875D /* scientists.json */; };
+		DC28F7932B4AD1F500BF875D /* Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28F7922B4AD1F500BF875D /* Scientist.swift */; };
+		DC28F7952B4AFBAB00BF875D /* SCNNode+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28F7942B4AFBAB00BF875D /* SCNNode+Position.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		DC2260BD2A8FFAB600AC9830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC2260BF2A8FFAB700AC9830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC2260C22A8FFAB700AC9830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC28F7902B4AD1CC00BF875D /* scientists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scientists.json; sourceTree = "<group>"; };
+		DC28F7922B4AD1F500BF875D /* Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scientist.swift; sourceTree = "<group>"; };
+		DC28F7942B4AFBAB00BF875D /* SCNNode+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Position.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,14 @@
 			path = AR;
 			sourceTree = "<group>";
 		};
+		DC28F78F2B4AD1B800BF875D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC28F7902B4AD1CC00BF875D /* scientists.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		DCA3CAE52B4719FD001921AD /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +109,7 @@
 		DCA3CAE82B471A16001921AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC28F7922B4AD1F500BF875D /* Scientist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -102,6 +117,7 @@
 		DCA3CAE92B471A22001921AD /* Assest */ = {
 			isa = PBXGroup;
 			children = (
+				DC28F78F2B4AD1B800BF875D /* Files */,
 				DC2260BF2A8FFAB700AC9830 /* Assets.xcassets */,
 			);
 			path = Assest;
@@ -118,6 +134,7 @@
 		DCA3CAEB2B471A70001921AD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DC28F7942B4AFBAB00BF875D /* SCNNode+Position.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -187,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC28F7912B4AD1CC00BF875D /* scientists.json in Resources */,
 				DC2260B92A8FFAB600AC9830 /* art.scnassets in Resources */,
 				DC2260C32A8FFAB700AC9830 /* LaunchScreen.storyboard in Resources */,
 				DC2260C02A8FFAB700AC9830 /* Assets.xcassets in Resources */,
@@ -202,6 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2260BB2A8FFAB600AC9830 /* ViewController.swift in Sources */,
+				DC28F7952B4AFBAB00BF875D /* SCNNode+Position.swift in Sources */,
+				DC28F7932B4AD1F500BF875D /* Scientist.swift in Sources */,
 				DC2260B72A8FFAB600AC9830 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
