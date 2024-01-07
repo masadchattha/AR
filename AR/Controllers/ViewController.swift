@@ -31,12 +31,8 @@ extension ViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
 
-        // Run the view's session
-        sceneView.session.run(configuration)
+        trackingConfigirationAR()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -47,10 +43,37 @@ extension ViewController {
     }
 }
 
+// MARK: - Helper Methods
+
+extension ViewController {
+
+    func trackingConfigirationAR() {
+        let configuration = ARImageTrackingConfiguration()
+        guard let trackingImages = ARReferenceImage.referenceImages(inGroupNamed: "Scientists AR Resources", bundle: nil) else { return }
+        configuration.trackingImages = trackingImages
+
+        sceneView.session.run(configuration)
+    }
+}
+
+
 // MARK: - ARSCNViewDelegate
 
 extension ViewController: ARSCNViewDelegate {
-    
+
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        guard let imageAnchor = anchor as? ARImageAnchor else { return nil }
+
+        let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
+        plane.firstMaterial?.diffuse.contents = UIColor.blue
+
+        let planeNode = SCNNode(geometry: plane)
+        planeNode.eulerAngles.x = -.pi / 2
+
+        let node = SCNNode()
+        node.addChildNode(planeNode)
+        return node
+    }
 }
 
 
