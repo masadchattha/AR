@@ -52,7 +52,6 @@ extension ViewController {
         let configuration = ARImageTrackingConfiguration()
         guard let trackingImages = ARReferenceImage.referenceImages(inGroupNamed: "Scientists AR Resources", bundle: nil) else { return }
         configuration.trackingImages = trackingImages
-
         sceneView.session.run(configuration)
     }
     
